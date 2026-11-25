@@ -70,6 +70,22 @@ Português, English, Español, Français, Deutsch, Italiano e 中文（简体）
 - **Clique** abre o que o widget mostra (o player, a previsão, o Gerenciador de Tarefas…).
 - **Botão direito**: tamanho, mostrar/esconder cada widget, *Organizar Widgets* e *Ajustes do MacOS Widgets…*
 
+## Acesso à rede
+Nada é enviado a lugar nenhum se o widget que precisa disso não estiver ligado. Sem chaves de API, contas ou telemetria.
+
+| Servidor | O que é enviado | Quando | Desligado por |
+|---|---|---|---|
+| api.open-meteo.com | Latitude e longitude da sua cidade | A cada 15 min | Tempo e Nascer do Sol desligados (nada antes de escolher a cidade) |
+| geocoding-api.open-meteo.com | O nome da cidade que você digita | Ao procurar uma cidade | — |
+| query1.finance.yahoo.com | Os códigos das ações | A cada 5 min | Bolsa desligada (padrão) |
+| Os sites de notícias que você adiciona, e os servidores das capas | Só o pedido | A cada 15 min | Notícias desligado (padrão) |
+| Seus links de calendário | O link (um link iCal privado inclui o token secreto) | A cada 15 min | Calendário desligado (padrão) |
+| Seu Home Assistant | Seu token de acesso | A cada 5 s, e a cada toque | Casa desligado (padrão) ou sem token |
+
+O endereço padrão do Home Assistant é `http://`, então o token passa sem criptografia na sua rede, a não ser que você use um endereço `https://`.
+
+Notas e lembretes ficam em `Documentos\MacOS Widgets` (pasta `Notes` e `Reminders.txt`), criados só quando você salva o primeiro; eles continuam lá se o mod for removido.
+
 ## Apoie o projeto
 Se você gosta do MacOS Widgets, pode apoiar o desenvolvimento com uma doação via Pix:
 

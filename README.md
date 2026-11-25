@@ -70,6 +70,22 @@ Português, English, Español, Français, Deutsch, Italiano and 中文（简体�
 - **Click** opens what the widget shows (the player, the forecast, Task Manager…).
 - **Right-click**: size, show/hide each widget, *Arrange Widgets* and *MacOS Widgets Settings…*
 
+## Network access
+Nothing is sent anywhere unless a widget that needs it is on. No API keys, no accounts, no telemetry.
+
+| Host | What is sent | When | Turned off by |
+|---|---|---|---|
+| api.open-meteo.com | Your city's latitude and longitude | Every 15 min | Weather and Sunrise off (nothing before a city is chosen) |
+| geocoding-api.open-meteo.com | The city name you type | When you search for a city | — |
+| query1.finance.yahoo.com | The stock symbols | Every 5 min | Stocks off (default) |
+| The news sites you add, and the hosts of their cover images | Nothing beyond the request | Every 15 min | News off (default) |
+| Your calendar links | The link (a private iCal link includes its secret token) | Every 15 min | Calendar off (default) |
+| Your Home Assistant | Your access token | Every 5 s, and on each tap | Home off (default) or no token |
+
+The default Home Assistant address is plain `http://`, so the token travels unencrypted on your network unless you use an `https://` address.
+
+Notes and reminders are saved in `Documents\MacOS Widgets` (`Notes` folder and `Reminders.txt`), created only when you save the first one; they stay when the mod is removed.
+
 ## Support the project
 If you enjoy MacOS Widgets, you can support its development with a Pix donation:
 
