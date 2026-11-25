@@ -70,6 +70,11 @@ Português, English, Español, Français, Deutsch, Italiano and 中文（简体�
 - **Click** opens what the widget shows (the player, the forecast, Task Manager…).
 - **Right-click**: size, show/hide each widget, *Arrange Widgets* and *MacOS Widgets Settings…*
 
+## Support the project
+If you enjoy MacOS Widgets, you can support its development with a Pix donation:
+
+**[Donate with LivePix (Pix)](https://livepix.gg/kurokobr)**
+
 ## License
 
 [GPL-3.0](LICENSE) © Thiago Silva

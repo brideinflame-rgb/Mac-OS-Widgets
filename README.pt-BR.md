@@ -70,6 +70,11 @@ Português, English, Español, Français, Deutsch, Italiano e 中文（简体）
 - **Clique** abre o que o widget mostra (o player, a previsão, o Gerenciador de Tarefas…).
 - **Botão direito**: tamanho, mostrar/esconder cada widget, *Organizar Widgets* e *Ajustes do MacOS Widgets…*
 
+## Apoie o projeto
+Se você gosta do MacOS Widgets, pode apoiar o desenvolvimento com uma doação via Pix:
+
+**[Doar com LivePix (Pix)](https://livepix.gg/kurokobr)**
+
 ## Licença
 
 [GPL-3.0](LICENSE) © Thiago Silva
