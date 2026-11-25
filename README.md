@@ -75,10 +75,10 @@ Nothing is sent anywhere unless a widget that needs it is on. No API keys, no ac
 
 | Host | What is sent | When | Turned off by |
 |---|---|---|---|
-| api.open-meteo.com | Your city's latitude and longitude | Every 15 min | Weather and Sunrise off (nothing before a city is chosen) |
+| api.open-meteo.com | Your city's latitude and longitude | Every 15 min and on settings changes | Weather and Sunrise off (nothing before a city is chosen) |
 | geocoding-api.open-meteo.com | The city name you type | When you search for a city | — |
 | query1.finance.yahoo.com | The stock symbols | Every 5 min | Stocks off (default) |
-| The news sites you add, and the hosts of their cover images | Nothing beyond the request | Every 15 min | News off (default) |
+| The news sites you add, and the hosts of their cover images | Nothing beyond the request | Every 15 min; finding a site's feed takes up to 10 more requests (announced feeds, feed-like links, /feed, /rss…), a site that fails is left alone for up to 60 min | News off (default) |
 | Your calendar links | The link (a private iCal link includes its secret token) | Every 15 min | Calendar off (default) |
 | Your Home Assistant | Your access token | Every 5 s, and on each tap | Home off (default) or no token |
 

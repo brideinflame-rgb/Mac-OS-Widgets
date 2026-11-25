@@ -75,10 +75,10 @@ Nada é enviado a lugar nenhum se o widget que precisa disso não estiver ligado
 
 | Servidor | O que é enviado | Quando | Desligado por |
 |---|---|---|---|
-| api.open-meteo.com | Latitude e longitude da sua cidade | A cada 15 min | Tempo e Nascer do Sol desligados (nada antes de escolher a cidade) |
+| api.open-meteo.com | Latitude e longitude da sua cidade | A cada 15 min e ao mudar os ajustes | Tempo e Nascer do Sol desligados (nada antes de escolher a cidade) |
 | geocoding-api.open-meteo.com | O nome da cidade que você digita | Ao procurar uma cidade | — |
 | query1.finance.yahoo.com | Os códigos das ações | A cada 5 min | Bolsa desligada (padrão) |
-| Os sites de notícias que você adiciona, e os servidores das capas | Só o pedido | A cada 15 min | Notícias desligado (padrão) |
+| Os sites de notícias que você adiciona, e os servidores das capas | Só o pedido | A cada 15 min; achar o feed de um site leva até 10 pedidos a mais (feeds anunciados, links de feed, /feed, /rss…), e um site que falha fica em espera por até 60 min | Notícias desligado (padrão) |
 | Seus links de calendário | O link (um link iCal privado inclui o token secreto) | A cada 15 min | Calendário desligado (padrão) |
 | Seu Home Assistant | Seu token de acesso | A cada 5 s, e a cada toque | Casa desligado (padrão) ou sem token |
 
