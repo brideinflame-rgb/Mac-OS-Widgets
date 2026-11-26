@@ -2377,9 +2377,6 @@ static void PollMedia(GlobalSystemMediaTransportControlsSessionManager& mgr) {
                 }
             }
             m.art = lastArt;
-        } else {
-            std::lock_guard<std::mutex> lock(g_dataMutex);
-            g_commands.clear();
         }
     } catch (winrt::hresult_error const& e) {
         Wh_Log(L"Media error 0x%08X", (unsigned)(int32_t)e.code());
@@ -9458,8 +9455,8 @@ static bool RunActionAt(Widget* wd, D2D1_POINT_2F p) {
             std::wstring text;
             {
                 std::lock_guard<std::mutex> lock(g_dataMutex);
-                for (auto& r : g_reminders)
-                    if (r.line == line) text = r.text;
+                for (auto& rl : g_reminders)
+                    if (rl.line == line) text = rl.text;
             }
             BeginEdit(wd, 3, L"", line, text);
         } else if (a == L"editdone") {
