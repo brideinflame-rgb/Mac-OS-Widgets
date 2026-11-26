@@ -80,7 +80,7 @@ Nada é enviado a lugar nenhum se o widget que precisa disso não estiver ligado
 | query1.finance.yahoo.com | Os códigos das ações | A cada 5 min | Bolsa desligada (padrão) |
 | Os sites de notícias que você adiciona, e os servidores das capas | Só o pedido | A cada 15 min; achar o feed de um site leva até 10 pedidos a mais (feeds anunciados, links de feed, /feed, /rss…), e um site que falha fica em espera por até 60 min | Notícias desligado (padrão) |
 | Seus links de calendário | O link (um link iCal privado inclui o token secreto) | A cada 15 min | Calendário desligado (padrão) |
-| Seu Home Assistant | Seu token de acesso | A cada 5 s, e a cada toque | Casa desligado (padrão) ou sem token |
+| Seu Home Assistant | Seu token de acesso | As entidades do widget a cada 5 s, a lista inteira a cada 5 min, e a cada toque | Casa desligado (padrão) ou sem token |
 
 O endereço padrão do Home Assistant é `http://`, então o token passa sem criptografia na sua rede, a não ser que você use um endereço `https://`.
 

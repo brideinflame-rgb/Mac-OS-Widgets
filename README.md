@@ -80,7 +80,7 @@ Nothing is sent anywhere unless a widget that needs it is on. No API keys, no ac
 | query1.finance.yahoo.com | The stock symbols | Every 5 min | Stocks off (default) |
 | The news sites you add, and the hosts of their cover images | Nothing beyond the request | Every 15 min; finding a site's feed takes up to 10 more requests (announced feeds, feed-like links, /feed, /rss…), a site that fails is left alone for up to 60 min | News off (default) |
 | Your calendar links | The link (a private iCal link includes its secret token) | Every 15 min | Calendar off (default) |
-| Your Home Assistant | Your access token | Every 5 s, and on each tap | Home off (default) or no token |
+| Your Home Assistant | Your access token | The widget's entities every 5 s, the whole list every 5 min, and on each tap | Home off (default) or no token |
 
 The default Home Assistant address is plain `http://`, so the token travels unencrypted on your network unless you use an `https://` address.
 
